@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'SPORT NEWS';
+    src: url('./assets/App/SportNewsRegular-0Wq7v.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+  body {
+    font-family: 'SPORT NEWS', sans-serif;
+}

@@ -1,0 +1,57 @@
+.contact {
+  background: radial-gradient( #4855e03d,   rgba(0, 0, 0, 0));
+  /* Additional styles for layout and appearance */
+  padding: 20px; /* Example padding */
+  border-radius: 10px; /* Example rounded corners */
+  color: #fff; /* Example text color for contrast */
+  width: 60%;
+  margin-top: 60px;
+}
+
+.contact .btn {
+    border-radius: 20px;
+    width: 437px;
+    background-color: #91be1d;
+    margin: auto;
+    color: white;
+    height: 59px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    &:hover {
+      background-color: #a0d320;
+    }
+  }
+@media (max-width:930px) {
+    .contact {
+        width: 70%;
+    }
+}
+
+@media (max-width:768px) {
+    textarea {
+        width: 70% !important;
+    }
+    .contact .btn {
+        width: 70% !important;
+    }
+}
+
+@media (max-width:640px) {
+    .contact {
+        width: 90%;
+
+        form input {
+            width: 90%;
+        }
+        textarea {
+            width: 90% !important;
+        }
+        h1 {
+            font-size: 33px;
+        }
+        
+    }
+    
+}

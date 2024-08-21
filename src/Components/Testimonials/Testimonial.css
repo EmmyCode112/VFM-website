@@ -1,0 +1,45 @@
+.faq-card {
+  border-radius: 29px;
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #071525;
+
+  p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  small {
+    font-size: 12px;
+    font-weight: 400;
+    color: #91be1d;
+  }
+
+  .text p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #BDBDBD;
+  }
+}
+
+.te-layer {
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(5, 14, 24, 0.9));
+}
+
+@media (max-width:660px) {
+    .testimonial h1 {
+      font-size: 33px;
+    }
+    .testimonial .uppercase {
+      font-size: 19px;
+    }
+}
