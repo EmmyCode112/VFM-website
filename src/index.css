@@ -21,6 +21,7 @@ body {
   color: white;
 }
 
+
 .float {
   background: linear-gradient(
     to top,
@@ -78,7 +79,12 @@ body {
   letter-spacing: 1px;
   transition: background-color 0.3s, transform 0.3s;
 }
-
+@media (max-width:330px) {
+  .btn button,
+.footer_btn {
+  padding: 12px 20px;
+}
+}
 .footer_btn {
   background-color: white;
   color: #91be1d;
@@ -186,7 +192,8 @@ button {
   width: 192px;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #91BE1D;
+    color: white;
   }
 }
 

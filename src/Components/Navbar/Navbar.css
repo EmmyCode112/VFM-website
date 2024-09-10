@@ -22,6 +22,7 @@ nav {
   padding: 25px 0;
   align-items: center;
   transition: padding 0.2s;
+
 }
 
 .logo img {
@@ -43,6 +44,7 @@ nav {
   padding: 14px 40px;
   border-radius: 40px;
   background-color: rgba(255, 255, 255, 0.2);
+  margin: 0;
 }
 
 .links li a {
@@ -100,9 +102,11 @@ nav {
     display: inline-block;
   }
   nav {
-    padding: 1rem 0 0 0;
-    display: flex;
-    align-items: center !important;
+    padding: 1rem 0 0;
+    /* display: flex; */
+    padding-right: 10px;
+    /* align-items: center !important; */
+
     /* justify-content:;     */
   }
   .header.scrolled .nav-links {
@@ -115,11 +119,16 @@ nav {
   }
 
   .logo {
-    flex-shrink: 30%;
+    width: 50px !important;
+    height: 50px;
+  }
+  .logo img {
+    width: 50px !important;
+    height: 50px !important;
   }
 
   .cover {
-    flex-basis: 100%;
+    flex-basis:90%;
     gap: 10px;
     display: flex;
     justify-content: end;
@@ -179,7 +188,7 @@ nav {
 @media (min-width: 922px) {
   /* Apply fixed position to links on large screens when scrolled */
   .header.scrolled .nav-links {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -188,5 +197,11 @@ nav {
     /* background: rgba(0, 0, 0, 0.8); */
     backdrop-filter: blur(10px);
 
+  }
+}
+
+@media (max-width:330px) {
+  .btn button {
+    
   }
 }

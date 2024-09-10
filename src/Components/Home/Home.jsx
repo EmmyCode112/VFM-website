@@ -9,7 +9,7 @@ import Wishlist from '../Wishlist/Wishlist'
 import About from '../About/About'
 import Offers from '../Offers/Offers'
 import Testimonials from '../Testimonials/Testimonial'
-import Contact from '../Contact/Contact'
+// import Contact from '../Contact/Contact'
 
 const Home = () => {
   return (
@@ -22,7 +22,7 @@ const Home = () => {
       <Offers/>
       <Testimonials/>
       <FAQs/>
-      <Contact/>
+      {/* <Contact/> */}
       <Footer/>
       <Float/>
     </div>

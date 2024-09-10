@@ -1,3 +1,13 @@
+.signup {
+  padding:0 !important;
+  margin:0 !important;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  background: linear-gradient(to bottom, #0c172b 0%, #050e18 100%);
+}
 .image {
   flex-basis: 50%;
 
@@ -28,7 +38,7 @@ form input:focus {
 
 .signup .btn {
   border-radius: 20px;
-  width: 437px;
+  width: 387px;
   background-color: #91be1d;
   margin: auto;
   color: white;
@@ -39,6 +49,7 @@ form input:focus {
   transition: 0.3s;
   &:hover {
     background-color: #a0d320;
+    color: white;
   }
 }
 .social button {

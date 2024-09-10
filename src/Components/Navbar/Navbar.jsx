@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
+import logo from "/public/VFM-LOGO.png";
+import navToggler from "/public/navbar_toggler.png";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -73,7 +75,7 @@ const Navbar = () => {
         <div className="float-div"></div>
         <div className="logo">
           <a href="#">
-            <img src="/vfm LOGO.png" alt="Logo" className="logo" />
+          <img src={logo} alt="Logo" className="" />
           </a>
         </div>
         <div className={`nav-links ${navbarActive ? "open" : ""}`}>
@@ -99,7 +101,7 @@ const Navbar = () => {
             </button>
           </div>
           <button className="menu-toggle" onClick={() => setNavbarActive((prev) => !prev)}>
-            <img className="w-[35px]" src="./navbar_toggler.png" alt="" />
+            <img className="w-[35px]" src={navToggler} alt="" />
           </button>
         </div>
       </nav>

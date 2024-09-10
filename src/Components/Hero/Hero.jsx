@@ -5,6 +5,10 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import "./Hero.css";
+import homepage1 from "/public/homepage_image.png"
+import homepage2 from "/public/homepage_image_2.png"
+import homepage3 from "/public/homepage_image_3.png"
+import homepage4 from "/public/homepage_image_4.png"
 
 const Hero = () => {
   return (
@@ -22,23 +26,23 @@ const Hero = () => {
         }}
       >
         <SwiperSlide>
-          <div className="w-full h-[100vh]">
-            <img src="/homepage_image.png" alt="Slide 1" className="w-full h-full object-cover" />
+          <div className="w-full hero-swiper">
+            <img src={homepage1} alt="Slide 1" className="w-full h-full object-cover" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full h-[100vh]">
-            <img src="/homepage_image_2.png" alt="Slide 2" className="w-full h-full object-cover" />
+          <div className="w-full hero-swiper">
+            <img src={homepage2} alt="Slide 2" className="w-full h-full object-cover" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full h-[100vh]">
-            <img src="/homepage_image_3.png" alt="Slide 3" className="w-full h-full object-cover" />
+          <div className="w-full hero-swiper">
+            <img src={homepage3} alt="Slide 3" className="w-full h-full object-cover" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full h-[100vh]">
-            <img src="/homepage_image_4.png" alt="Slide 4" className="w-full h-full object-cover" />
+          <div className="w-full  hero-swiper">
+            <img src={homepage4} alt="Slide 4" className="w-full h-full object-cover" />
           </div>
         </SwiperSlide>
       </Swiper>

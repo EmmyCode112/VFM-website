@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import faq1 from "/public/FAQImg.png";
 
 import "./Testimonial.css";
 
@@ -29,7 +30,7 @@ const Testimonial = () => {
             <div className="flex items-center gap-[19px]">
               <div>
                 <img
-                  src="./FAQImg.png"
+                  src={faq1}
                   className="w-[50px] h-[50px] rounded-[full]"
                   alt=""
                 />
@@ -43,7 +44,7 @@ const Testimonial = () => {
               <p>
                 This gaming site is fantastic! The graphics are top-tier, and
                 the gameplay is always smooth. I love how the community is so
-                active and friendly. It's become my go-to place for gaming.
+                active and friendly. It&opas;s become my go-to place for gaming.
               </p>
             </div>
           </div>
@@ -52,7 +53,7 @@ const Testimonial = () => {
             <div className="flex items-center gap-[19px]">
               <div>
                 <img
-                  src="./FAQImg.png"
+                  src={faq1}
                   className="w-[50px] h-[50px] rounded-[full]"
                   alt=""
                 />
@@ -84,7 +85,7 @@ const Testimonial = () => {
             <div className="flex items-center gap-[19px]">
               <div>
                 <img
-                  src="./FAQImg.png"
+                  src={faq1}
                   className="w-[50px] h-[50px] rounded-[full]"
                   alt=""
                 />
@@ -104,7 +105,7 @@ const Testimonial = () => {
             <div className="flex items-center gap-[19px]">
               <div>
                 <img
-                  src="./FAQImg.png"
+                  src={faq1}
                   className="w-[50px] h-[50px] rounded-[full]"
                   alt=""
                 />
@@ -128,7 +129,7 @@ const Testimonial = () => {
             <div className="flex items-center gap-[19px]">
               <div>
                 <img
-                  src="./FAQImg.png"
+                  src={faq1}
                   className="w-[50px] h-[50px] rounded-[full]"
                   alt=""
                 />
@@ -140,7 +141,7 @@ const Testimonial = () => {
             </div>
             <div className="text">
               <p>
-              What a great gaming platform! The updates are frequent, ensuring everything stays fresh and exciting. Plus, the gameplay is seamless, which makes for an awesome experience."
+              What a great gaming platform! The updates are frequent, ensuring everything stays fresh and exciting. Plus, the gameplay is seamless, which makes for an awesome experience.&qoute;
               </p>
             </div>
           </div>
@@ -148,7 +149,7 @@ const Testimonial = () => {
             <div className="flex items-center gap-[19px]">
               <div>
                 <img
-                  src="./FAQImg.png"
+                  src={faq1}
                   className="w-[50px] h-[50px] rounded-[full]"
                   alt=""
                 />

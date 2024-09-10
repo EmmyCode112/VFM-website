@@ -2,6 +2,11 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './About.css';
+import phone1 from "/public/apple.png";
+import phone2 from "/public/android.png";
+import cardPhone1 from "/public/phone_01.png";
+import cardPhone2 from "/public/phone_02.png";
+import cardPhone3 from "/public/phone_03.png";
 
 const About = () => {
   useEffect(() => {
@@ -25,10 +30,10 @@ const About = () => {
       </div>
       <div className="about_btn mb-[44px] max-sm:gap-[15px]">
         <button className="relative"><div className="coming-soon">coming soon</div>
-          <img src="./apple.png" alt="" /> <small>IOS</small>
+          <img src={phone1}  alt="" /> <small>IOS</small>
         </button>
         <button className="relative"><div className="coming-soon">coming soon</div>
-          <img src="./android.png" alt="" />
+          <img src={phone2} alt="" />
           <small>ANDROID</small>
         </button>
       </div>
@@ -40,7 +45,7 @@ const About = () => {
             </p>
             <div className="line"></div>
             <div>
-              <img src="./phone_01.png" alt="Phone 01" />
+              <img src={cardPhone1} alt="Phone 01" />
             </div>
           </div>
           <div className="card">
@@ -49,7 +54,7 @@ const About = () => {
             </p>
             <div className="line"></div>
             <div>
-              <img src="./phone_03.png" alt="Phone 03" />
+              <img src={cardPhone3} alt="Phone 03" />
             </div>
           </div>
           <div className="card">
@@ -58,7 +63,7 @@ const About = () => {
             </p>
             <div className="line"></div>
             <div>
-              <img src="./phone_02.png" alt="Phone 02" />
+              <img src={cardPhone2} alt="Phone 02" />
             </div>
           </div>
         </div>

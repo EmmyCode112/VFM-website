@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./FAQs.css";
+import arrow from "/public/dropdown_vector.png"
 
 const FAQs = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -94,27 +95,25 @@ const FAQs = () => {
             FAQ<span className="text-[65px]">S</span>
           </h1>
         </div>
-        <div className="right fag pr-3 flex-1 flex items-end flex-col gap-[40px] text-left">
+        <div className="right fag pr-3 flex-1 flex items-end flex-col gap-[30px] text-left">
           {faqItems.map((item, index) => (
             <div
               key={index}
-              className="w-[528px] dropper relative flex flex-col gap-[20px]"
+              className="w-[528px] dropper relative flex flex-col gap-[0px]"
             >
               {index > 0 && <div className="divider"></div>}
               <div
                 onClick={() => handleToggle(index)}
-                className="label flex items-center justify-between  cursor-pointer"
+                className="label flex items-center justify-between gap-[15px]  cursor-pointer"
               >
                 <p className=" uppercase max-sm:text-[9px]">{item.question}</p>
-                <div>
                   <img
-                    className={`w-[15px] h-[12px] transform transition-transform ${
+                    className={`w-[16px] h-[10px] transform transition-transform ${
                       activeIndex === index ? "rotate-180" : ""
                     }`}
-                    src="./dropdown_vector.png"
+                    src={arrow}
                     alt=""
                   />
-                </div>
               </div>
               <div
                 className={`dropdown-content pr-[25px] text-[#BDBDBD] text-[14px] transition-max-height duration-300 ease-in-out ${
